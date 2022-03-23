@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // *A prototype is a blueprint of an object.** Prototype allows us to inherit features, properties, and methods from one object to another.
+  // Prototype is a object attach to every object, function, array. Which can be access by object , function and array by just using dot operator.
+  //~~~~~~~~~~~~~Prototype With Object Literal~~~~~~~~~~~~~~~
+  let obj = {
+    name: "Pooja",
+    age: 24,
+    getName: function () {
+      return this.name;
+    },
+  };
+  let obj2 = {
+    age: 20,
+    __proto__: obj,
+  };
+  console.log(obj2.name);
+  //~~~~~~~~~~~~~Prototype With Constructor function~~~~~~~~~~~~~~~
+  function Person() {
+    this.name = "pooja";
+  }
+  let person1 = new Person();
+  let person2 = new Person();
+  Person.prototype.greeting = function () {
+    console.log("Hello Welcome", this.name);
+  };
+  person1.greeting();
+  Person.prototype.bye = function () {
+    console.log("Bye See You", this.name);
+  };
+  person2.bye();
+</script>
