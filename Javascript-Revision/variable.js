@@ -26,3 +26,6 @@ y();
 
 //difference between block scope and local scope ?
 //block scope and local both writes
+m = 5;
+console.log(m);
+var m = 0;

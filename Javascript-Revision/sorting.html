@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Data</title>
+  </head>
+  <style>
+    #green,
+    #red,
+    #pink,
+    #purple,
+    #blue {
+      display: flex;
+    }
+    #green > div {
+      border: 1px solid black;
+      background-color: green;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+    }
+    #red > div {
+      border: 1px solid black;
+      background-color: red;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+    }
+    #pink > div {
+      border: 1px solid black;
+      background-color: pink;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+    }
+    #purple > div {
+      border: 1px solid black;
+      background-color: purple;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+    }
+    #blue > div {
+      border: 1px solid black;
+      background-color: blue;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+    }
+  </style>
+  <body>
+    <select name="color" id="color" onclick="colorChange()">
+      <option value="selectAll">Select Color</option>
+      <option value="red">red</option>
+      <option value="green">green</option>
+      <option value="blue">blue</option>
+      <option value="pink">pink</option>
+      <option value="purple">purple</option>
+    </select>
+    <div id="all"></div>
+    <div id="box">
+      <div id="green">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div id="red">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div id="blue">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div id="purple">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div id="pink">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div id="yellow"></div>
+    <div id="orange"></div>
+    <div id="gray"></div>
+  </body>
+</html>
+<script>
+  let color = document.getElementById("color");
+  let red = document.getElementById("red");
+  let green = document.getElementById("green");
+  let purple = document.getElementById("purple");
+  let blue = document.getElementById("blue");
+  let div = document.createElement("div");
+  let all = document.getElementById("all");
+  let box = document.getElementById("box");
+
+  function colorChange() {
+    if (color.value === "selectAll") {
+      box.style.display = "block";
+    } else if (color.value === "red") {
+      all.append(red);
+      box.style.display = "none";
+    } else if (color.value === "purple") {
+      all.append(purple);
+      box.style.display = "none";
+    } else if (color.value === "green") {
+      all.append(green);
+      box.style.display = "none";
+    } else if (color.value === "pink") {
+      all.append(pink);
+      box.style.display = "none";
+    } else if (color.value === "blue") {
+      all.append(blue);
+      box.style.display = "none";
+    }
+  }
+  function myFunction() {
+    var x = document.getElementById("mySelect").value;
+    document.getElementById("demo").innerHTML = x;
+  }
+</script>

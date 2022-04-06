@@ -11,3 +11,9 @@ function displayName() {
 }
 
 test(sayHello);
+
+const length = 9;
+const numbers = [];
+for (let i = 0; i <= length; i++) {
+  console.log(i, numbers.push(i + 1));
+}
