@@ -9,7 +9,7 @@
 "minRate" : 240,
 "review": 34,
 "vote" : 333,
-"ratingStar" : 4.5 ,
+"ratingStar" : 1.5 ,
 "payment_methods": "card"
     },
     
@@ -35,7 +35,7 @@
 "minRate" : 80,
 "review": 44,
 "vote" : 133,
-"ratingStar" : 3.5,
+"ratingStar" : 2.8,
 "payment_methods":  "cash"
     
     },
@@ -76,7 +76,7 @@
 "minRate" : 360,
 "review": 74,
 "vote" : 143,
-"ratingStar" : 6,
+"ratingStar" : 4.5,
 "payment_methods":  "cash"
     
     },
@@ -89,7 +89,7 @@
 "minRate" : 130,
 "review": 304,
 "vote" : 222,
-"ratingStar" : 7.5,
+"ratingStar" : 3.9,
 "payment_methods":  "upi"
     
     
@@ -103,7 +103,7 @@
 "minRate" : 40,
 "review": 124,
 "vote" : 123,
-"ratingStar" : 8.5,
+"ratingStar" : 2.7,
 "payment_methods":  "cash"
     
     },
@@ -116,7 +116,7 @@
 "minRate" : 90,
 "review": 54,
 "vote" : 45,
-"ratingStar" : 4.0,
+"ratingStar" : 4.1,
 "payment_methods":  "upi"
     
     },

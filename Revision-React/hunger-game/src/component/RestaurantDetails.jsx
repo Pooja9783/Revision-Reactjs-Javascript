@@ -1,23 +1,97 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactPaginate from "react-paginate";
 import database from "../db/db.json";
 import Navbar from "./Navbar";
 import "../App.css";
 const Restaurantdetails = () => {
-  const [value, setValue] = useState(database);
+  let storedata = database.data;
+  //   console.log(storedata);
+  const [value, setValue] = useState(storedata);
+
+  //~~~~~~~~~~~~~~~~~~Pagination Start~~~~~~~~~~~~~~~~~~~~~~~
   const [pageNumber, setPageNumber] = useState(0);
   const usersPerPage = 4;
   const pagesVisited = pageNumber * usersPerPage;
-  const pageCount = Math.ceil(value.data.length / usersPerPage);
+  const pageCount = Math.ceil(value.length / usersPerPage);
   const changePage = ({ selected }) => {
     setPageNumber(selected);
   };
+  //~~~~~~~~~~~~~~~~~~Pagination End~~~~~~~~~~~~~~~~~~~~~~~
+
+  //   console.log(value.data);
+
+  // ~~~~~~~~~~~~~~~Rating~~~~~~~~~
+  const highToLow = (a) => {
+    if (a === "a") {
+      let res = value.filter((e) => {
+        return e.ratingStar >= 1;
+      });
+      setValue(res);
+    } else if (a === "b") {
+      let res = value.filter((e) => {
+        return e.ratingStar >= 2;
+      });
+      setValue(res);
+    } else if (a === "c") {
+      let res = value.filter((e) => {
+        return e.ratingStar >= 3;
+      });
+      setValue(res);
+    } else if (a === "d") {
+      let res = value.filter((e) => {
+        return e.ratingStar >= 4;
+      });
+      setValue(res);
+    }
+  };
+
+  //~~~~~~~~~~~~~~~~~~Payment~~~~~~~~~~~~~~~~
+  const payment_methods = (m) => {
+    if (m === "x") {
+      let res = value.filter((e) => {
+        return e.payment_methods === "cash";
+      });
+      setValue(res);
+    } else if (m === "y") {
+      let res = value.filter((e) => {
+        return e.payment_methods === "card";
+      });
+      setValue(res);
+    } else if (m === "z") {
+      let res = value.filter((e) => {
+        return e.payment_methods === "upi";
+      });
+      setValue(res);
+    }
+  };
+  //~~~~~~~~~~~~~~~~~~Payment~~~~~~~~~~~~~~~~
+
+  //~~~~~~~~~~~~~~~~~~High to Low~~~~~~~~~~~~~~~~
+  const hTol = (m) => {
+    if (m === "h") {
+      let res = value.sort((a, b) => {
+        return b.costForOne - a.costForOne;
+      });
+      setValue([...res]);
+    } else if (m === "l") {
+      let res = value.sort((a, b) => {
+        return a.costForOne - b.costForOne;
+      });
+      setValue([...res]);
+    }
+  };
+  //~~~~~~~~~~~~~~~~~~High to Low~~~~~~~~~~~~~~~~
+
   return (
     <div>
-      <Navbar />
+      <Navbar
+        highToLow={highToLow}
+        payment_methods={payment_methods}
+        hTol={hTol}
+      />
       <div className="container">
         <div className="row">
-          {value.data
+          {value
             .slice(pagesVisited, pagesVisited + usersPerPage)
             .map((d, i) => {
               return (
