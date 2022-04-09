@@ -1,0 +1,43 @@
+.payment-btn{
+margin-left : 300px
+}
+
+button{
+    margin:2px 4px;
+}
+.navbar{
+    justify-content: space-around;
+}
+.main-img{
+    width: 100%;
+    height: 600px;
+}
+ .paginationBttns {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        color: rgb(200, 175, 240);
+        
+    }
+    
+    .paginationBttns a {
+        padding: 6px 9px;
+        margin: 8px;
+        border-radius: 50%;
+        text-decoration: none;
+        font-size: 25px;
+        cursor: pointer;
+        background:rgb(34, 30, 30);
+        color:rgb(200, 175, 240)
+      }
+    
+    .paginationBttns a:hover {
+    background:rgb(235, 10, 10);
+    color:rgb(200, 175, 240)
+    }
+    
+    .paginationActive a {
+        background:rgb(228, 63, 63);
+        color:rgb(200, 175, 240)
+    }
+    

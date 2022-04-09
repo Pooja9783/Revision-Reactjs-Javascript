@@ -1,0 +1,167 @@
+{
+  "data": [
+    {
+"id": 1,
+"title": "URU Brewpark",
+"category" : "Continental, Pizza, Asian, Desserts",
+"img" : "https://media-cdn.tripadvisor.com/media/photo-s/1c/38/9a/1c/la-olympo.jpg",
+"costForOne": 300,
+"minRate" : 240,
+"review": 34,
+"vote" : 333,
+"ratingStar" : 4.5 ,
+"payment_methods": "card"
+    },
+    
+
+    {
+"id": 2,
+"title": "Pizza Margherita",
+"category" : "Continental, Pizza, Asian, Desserts",
+"img" : "https://static.toiimg.com/photo/msid-87930581/87930581.jpg?211826",
+"costForOne": 200,
+"minRate" : 180,
+"review": 60,
+"vote" : 100,
+"ratingStar" : 3.5,
+"payment_methods": "upi"
+    },
+        {
+"id": 3,
+"title": "2 X 2 Burger",
+"category" : "Continental, Pizza, Asian, Desserts",
+"img" : "https://assets.cntraveller.in/photos/60ba26c0bfe773a828a47146/4:3/w_1440,h_1080,c_limit/Burgers-Mumbai-Delivery.jpg",
+"costForOne": 120,
+"minRate" : 80,
+"review": 44,
+"vote" : 133,
+"ratingStar" : 3.5,
+"payment_methods":  "cash"
+    
+    },
+        {
+"id": 4,
+"title": "Veg Choumin",
+"category" : "Continental, Pizza, Asian, Desserts",
+"img" : "https://content.jdmagicbox.com/comp/ahmedabad/u8/079pxx79.xx79.180503160411.w9u8/catalogue/chennai-express-fast-food-center-ellis-bridge-ahmedabad-fast-food-w19zz-250.jpg",
+"costForOne": 300,
+"minRate" : 120,
+"review": 70,
+"vote" : 103,
+"ratingStar" : 2.5,
+"payment_methods":  "cash"
+    
+    },
+    
+        {
+"id": 5,
+"title": "Grilled Sandwich",
+"category" : "Continental, Pizza, Asian, Desserts",
+"img" : "https://images.immediate.co.uk/production/volatile/sites/30/2013/05/herby-chicken-gyros-8233167.jpg",
+"costForOne": 150,
+"minRate" : 90,
+"review": 60,
+"vote" : 243,
+"ratingStar" : 2.9,
+"payment_methods":  "card"
+    
+    
+    },
+        {
+"id": 6,
+"title": "Lasagna",
+"category" : "Continental, Pizza, Asian, Desserts",
+"img" : "https://www.simplyrecipes.com/thmb/Hm1DTQDZ9Dhkl7zTUkD6idFKmT8=/2000x1125/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2012__11__Vegetarian-Lasagna-LEAD-1-6173a71bfd1347aa8d7659150e87b8f4.jpg",
+"costForOne": 400,
+"minRate" : 360,
+"review": 74,
+"vote" : 143,
+"ratingStar" : 6,
+"payment_methods":  "cash"
+    
+    },
+        {
+"id": 7,
+"title": "Indian Pav Bhaji",
+"category" : "Continental, Pizza, Asian, Desserts",
+"img" : "https://www.vegrecipesofindia.com/wp-content/uploads/2021/04/pav-bhaji-1.jpg",
+"costForOne": 190,
+"minRate" : 130,
+"review": 304,
+"vote" : 222,
+"ratingStar" : 7.5,
+"payment_methods":  "upi"
+    
+    
+    },
+        {
+"id": 8,
+"title": "Pani Puri",
+"category" : "Continental, Pizza, Asian, Desserts",
+"img" : "https://i0.wp.com/myvegetarianroots.com/wp-content/uploads/2020/03/DSC_0215.jpeg?fit=1920%2C1285&ssl=1",
+"costForOne": 50,
+"minRate" : 40,
+"review": 124,
+"vote" : 123,
+"ratingStar" : 8.5,
+"payment_methods":  "cash"
+    
+    },
+        {
+"id": 9,
+"title": "Machurian",
+"category" : "Continental, Pizza, Asian, Desserts",
+"img" : "https://www.hookedonheat.com/wp-content/uploads/2006/03/Gobi-Manchurian-HOHV-500x375.jpg",
+"costForOne": 150,
+"minRate" : 90,
+"review": 54,
+"vote" : 45,
+"ratingStar" : 4.0,
+"payment_methods":  "upi"
+    
+    },
+        {
+"id": 10,
+"title": "Hyedrabadi Biryani",
+"category" : "Continental, Pizza, Asian, Desserts",
+"img" : "https://i.pinimg.com/originals/51/5d/ee/515dee58039937365193bd09c86519c4.jpg",
+"costForOne": 290,
+"minRate" : 180,
+"review": 69,
+"vote" : 45,
+"ratingStar" : 3.7,
+"payment_methods":  "cash"
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ]
+ 
+}
