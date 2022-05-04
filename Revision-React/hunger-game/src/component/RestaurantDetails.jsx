@@ -10,7 +10,7 @@ const Restaurantdetails = () => {
 
   //~~~~~~~~~~~~~~~~~~Pagination Start~~~~~~~~~~~~~~~~~~~~~~~
   const [pageNumber, setPageNumber] = useState(0);
-  const usersPerPage = 4;
+  const usersPerPage = 3;
   const pagesVisited = pageNumber * usersPerPage;
   const pageCount = Math.ceil(value.length / usersPerPage);
   const changePage = ({ selected }) => {
@@ -21,27 +21,28 @@ const Restaurantdetails = () => {
   //   console.log(value.data);
 
   // ~~~~~~~~~~~~~~~Rating~~~~~~~~~
+  useEffect(() => {});
   const highToLow = (a) => {
     if (a === "a") {
       let res = value.filter((e) => {
         return e.ratingStar >= 1;
       });
-      setValue(res);
+      setValue([...res]);
     } else if (a === "b") {
       let res = value.filter((e) => {
         return e.ratingStar >= 2;
       });
-      setValue(res);
+      setValue([...res]);
     } else if (a === "c") {
       let res = value.filter((e) => {
         return e.ratingStar >= 3;
       });
-      setValue(res);
+      setValue([...res]);
     } else if (a === "d") {
       let res = value.filter((e) => {
         return e.ratingStar >= 4;
       });
-      setValue(res);
+      setValue([...res]);
     }
   };
 
@@ -51,17 +52,17 @@ const Restaurantdetails = () => {
       let res = value.filter((e) => {
         return e.payment_methods === "cash";
       });
-      setValue(res);
+      setValue([...res]);
     } else if (m === "y") {
       let res = value.filter((e) => {
         return e.payment_methods === "card";
       });
-      setValue(res);
+      setValue([...res]);
     } else if (m === "z") {
       let res = value.filter((e) => {
         return e.payment_methods === "upi";
       });
-      setValue(res);
+      setValue([...res]);
     }
   };
   //~~~~~~~~~~~~~~~~~~Payment~~~~~~~~~~~~~~~~

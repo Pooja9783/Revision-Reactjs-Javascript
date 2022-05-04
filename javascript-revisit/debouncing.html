@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="betterFun()">Click Me for debouncing</button>
+    <button onclick="betterFunThrottling()">Click Me for throttling</button>
+  </body>
+</html>
+
+<script>
+  function debounce(fn, de) {
+    let debounceTimer;
+    return function () {
+      let context = this;
+      let agrs = arguments;
+      clearTimeout(debounceTimer);
+
+      debounceTimer = setTimeout(() => {
+        fn.apply(context, agrs);
+      }, de);
+    };
+  }
+
+  function btnClick() {
+    alert("cliked");
+  }
+
+  let betterFun = debounce(btnClick, 3000);
+
+  // ****************||****************
+  // let isExecutable = true;
+
+  // function throttling(fn, d) {
+  //   let context = this;
+  //   let agrs = arguments;
+  //   return function () {
+  //     if (isExecutable) {
+  //       fn.apply(context, agrs);
+  //       isExecutable = false;
+  //       setTimeout(() => {
+  //         isExecutable = true;
+  //       }, d);
+  //     }
+  //   };
+  // }
+  // function clickThrottling() {
+  //   alert("Clicked on Throttling Button");
+  // }
+
+  // let betterFunThrottling = throttling(clickThrottling, 1000);
+
+  function throttling(fn, d) {
+    let flag = true;
+    return function () {
+      if (flag) {
+        fn();
+        flag = false;
+        setTimeout(() => {
+          flag = true;
+        }, d);
+      }
+    };
+  }
+  function clickThrottling() {
+    alert("Clicked on Throttling Button");
+  }
+  let betterFunThrottling = throttling(clickThrottling, 1000);
+</script>

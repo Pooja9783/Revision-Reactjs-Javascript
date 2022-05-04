@@ -1,9 +1,22 @@
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
-  margin-left:  700px;
+ 
 }
-
+.App{
+font-family: arial;
+font-size: 24px;
+margin: 25px;
+width: 350px;
+height: 200px;
+margin: auto;
+}
+.center-div{
+    width: 500px;
+    height: 500px;
+    /* Center horizontally*/
+    margin: 0 auto;
+}
 ol,
 ul {
   padding-left: 30px;
